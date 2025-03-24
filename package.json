@@ -1,0 +1,21 @@
+{
+  "name": "mysli",
+  "version": "0.0.1",
+  "description": "Mysli is a project that allows you to store, share, and visulize your thoughts via different structures",
+  "main": "index.js",
+  "scripts": {
+    "dev-frontend": "npm run dev --workspace @mysli/web-frontend",
+    "build-frontend": "npm run build --workspace @mysli/web-frontend",
+    "dev-backend": "npm run start:dev --workspace @mysli/web-backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mysli"
+  ],
+  "author": "Oleg Shipitsyn <olegshipitsyn.work@gmail.com>",
+  "license": "ISC",
+  "workspaces": [
+    "packages/web-frontend",
+    "packages/web-backend"
+  ]
+}

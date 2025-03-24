@@ -1,0 +1,54 @@
+# Root-level ignores (common to both projects)
+node_modules/
+dist/
+/build/
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.DS_Store
+.env
+.env.*.local
+.temp/
+.tmp/
+pids/
+*.pid
+*.seed
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Backend-specific (packages/web-backend)
+/packages/web-backend/dist-ssr/
+/packages/web-backend/*.local
+# Editor-specific for backend
+/packages/web-backend/.vscode/*
+!/packages/web-backend/.vscode/extensions.json
+/packages/web-backend/.idea/
+/packages/web-backend/*.suo
+/packages/web-backend/*.ntvs*
+/packages/web-backend/*.njsproj
+/packages/web-backend/*.sln
+/packages/web-backend/*.sw?
+
+# Frontend-specific (packages/web-frontend)
+/packages/web-frontend/.vite/  # Vite cache
+/packages/web-frontend/coverage/
+/packages/web-frontend/.nyc_output/
+/packages/web-frontend/.project/
+/packages/web-frontend/.classpath/
+/packages/web-frontend/.c9/
+/packages/web-frontend/*.launch
+/packages/web-frontend/.settings/
+/packages/web-frontend/*.sublime-workspace
+# IDE - VSCode for frontend
+/packages/web-frontend/.vscode/*
+!/packages/web-frontend/.vscode/settings.json
+!/packages/web-frontend/.vscode/tasks.json
+!/packages/web-frontend/.vscode/launch.json
+!/packages/web-frontend/.vscode/extensions.json
+
+# Editor directories and files (shared, if not scoped)
+/.idea/
