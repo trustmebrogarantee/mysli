@@ -6,15 +6,15 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '~': path.resolve(__dirname, 'src'), // Example: '@' maps to '/src'
+      '~': path.resolve(__dirname, 'src'),
     },
   },
   server: {
-    host: '0.0.0.0', // Listen on all interfaces
-    port: 5173,      // Match your Docker port
+    host: '0.0.0.0',
+    port: 5173,
     hmr: {
-      host: 'localhost', // HMR connects back to localhost from the browser
-      port: 5173,       // Match the exposed port
+      host: 'localhost',
+      port: 5173,
       protocol: 'ws'
     },
     watch: {
